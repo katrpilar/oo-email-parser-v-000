@@ -12,10 +12,10 @@ class EmailParser
   end
   
   def parse
-    if @list.include?(", ")
-      return @list.split(", ").compact!
+    if list.include?(", ")
+      return list.split(", ").compact!
     else
-      return @list.split(" ").compact!
+      return list.split(" ").compact!
     end
   end
 end
