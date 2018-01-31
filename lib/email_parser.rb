@@ -6,11 +6,15 @@
 class EmailParser
   attr_accessor :parse
   
+  def initialize(list)
+    @list = list
+  end
+  
   def parse
-    if @parse.include?(", ")
-      return @parse.split(", ").compact!
+    if @list.include?(", ")
+      return @list.split(", ").compact!
     else
-      return @parse.split(" ").compact!
+      return @list.split(" ").compact!
     end
   end
 end
