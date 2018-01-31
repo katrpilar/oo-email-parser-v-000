@@ -7,6 +7,9 @@ class EmailParser
   attr_accessor :parse
   
   def parse
-    @parse.split(", ")
+    if @parse.include?(", ")
+      return @parse.split(", ")
+    else
+      return @parse.split(" ")
   end
 end
