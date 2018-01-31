@@ -4,7 +4,8 @@
 # or whitespace (' ').
 
 class EmailParser
-  attr_accessor :parse, :list
+  attr_accessor :parse
+  attr_reader :list
   
   def initialize(list)
     @list = list
