@@ -8,8 +8,8 @@ class EmailParser
   
   def parse
     if @parse.include?(", ")
-      return @parse.split(", ").compact
+      return @parse.split(", ").compact!
     else
-      return @parse.split(" ").compact
+      return @parse.split(" ").compact!
   end
 end
