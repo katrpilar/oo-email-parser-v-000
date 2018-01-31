@@ -11,5 +11,6 @@ class EmailParser
       return @parse.split(", ").compact!
     else
       return @parse.split(" ").compact!
+    end
   end
 end
