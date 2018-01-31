@@ -12,9 +12,9 @@ class EmailParser
   end
   
   def parse
-    if list.include?(", ")
+    if list.include?(", ") && !list.include?(" ")
       return list.split(", ").compact
-    else
+    elsif list.include?(", ") && !list.include?(" ")
       return list.split(" ").compact
     end
   end
